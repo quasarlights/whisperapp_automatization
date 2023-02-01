@@ -14,6 +14,8 @@ COPY . /app
 
 RUN pip3 install -r requirements.txt
 
+RUN apt -y install ffmpeg
+
 EXPOSE 5000
 
 CMD ["python3", "main.py"]
